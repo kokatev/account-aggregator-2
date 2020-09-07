@@ -1,0 +1,10 @@
+/* Add application styles & imports to this file! */
+*{
+  font-family: 'Varela Round', sans-serif;
+}
+.gradient-1{
+   background-image: linear-gradient(to right,#467ae9, rgb(52, 182, 199));
+}
+.gradient-2{
+   background-image: linear-gradient(to right,#522020, rgb(230, 79, 79));
+}

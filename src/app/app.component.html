@@ -1,0 +1,10 @@
+<div class="header">
+  {{shrdSvc.screenName}}
+  <fa name="sync" style="float:right; font-size:16px; margin-top:2px;"></fa>
+</div>
+<router-outlet></router-outlet>
+<div class="navbar">
+  <a routerLink="/" routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact: true}"> <fa name="home"></fa></a>
+  <a routerLink="/txn" routerLinkActive="active-menu"><fa name="history"></fa></a>
+  <a routerLink="/analysis" routerLinkActive="active-menu"><fa name="user"></fa></a>
+</div>

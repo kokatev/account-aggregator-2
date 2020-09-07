@@ -1,0 +1,56 @@
+*{
+  font-family: 'Varela Round', sans-serif;
+}
+p {
+  font-family: Lato;
+}
+body, * {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #6b66666e;
+  margin-left: -10px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #535252;
+  text-align: center;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px solid rgba(128, 128, 128, 0.267)
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+.header{
+  padding: 15px;
+  color: rgb(23, 85, 165);
+font-size: 18px;
+margin-left: -10px;
+margin-right: -10px;
+letter-spacing: 0.3px;
+box-shadow: -2px 3px 12px 0px #80808052;
+}
+.active-menu{
+  background-color: white;
+  color: black !important;
+  border-bottom: 5px solid rgb(202, 185, 185);
+  box-sizing: border-box;
+}
