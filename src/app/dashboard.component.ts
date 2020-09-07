@@ -11,5 +11,6 @@ export class DashboardComponent implements OnInit{
 constructor(public sharedService: SharedService){}
   ngOnInit(){
     this.sharedService.screenName = 'Dashboard';
+
   }
 }

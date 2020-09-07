@@ -11,8 +11,42 @@
     Total balance
   </div>
 <div class="big-text">
-  <fa name="rupee-sign"></fa> 2333.90
+  <fa name="rupee-sign"></fa> {{sharedService.getTotalBalance() | number:'.2'}}
 </div>
 <div style="margin-top:10px; font-size:11px;"> Last transaction on 4-Sep-2020 </div>
 </div>
-<div style="height:130px;">Some text</div>
+<div style="padding:10px 20px; box-sizing:border-box;" class="gradient-3">
+  <div class="bank-balance">
+    <span>
+      <img [src]="sharedService.bankLogos['icici'].logo" style="height:25px;">
+    </span>
+    <span style="width:50%; display:inline-block;">ICICI Savings
+        <br>
+        <div style="font-size: 10px;">Last transaction: 4-Sep-2020</div>
+
+    </span>
+    <span> <fa name="rupee-sign"></fa> {{sharedService.bank1Balance | number:'.2'}} </span>
+  </div>
+  <div class="bank-balance">
+    <span>
+      <img [src]="sharedService.bankLogos['hdfc'].logo" style="height:25px;">
+    </span>
+    <span style="width:50%; display:inline-block;">HDFC Savings
+        <br>
+        <div style="font-size: 10px;">Last transaction: 12-Sep-2020</div>
+
+    </span>
+    <span> <fa name="rupee-sign"></fa> {{sharedService.bank2Balance | number:'.2'}} </span>
+  </div>
+  <div class="bank-balance">
+    <span>
+      <img [src]="sharedService.bankLogos['paytm'].logo" style="height:25px;">
+    </span>
+    <span style="width:50%; display:inline-block;">Paytm Bank Savings
+        <br>
+        <div style="font-size: 10px;">Last transaction: 12-Sep-2020</div>
+
+    </span>
+    <span> <fa name="rupee-sign"></fa> {{sharedService.bank2Balance | number:'.2'}} </span>
+  </div>
+</div>
