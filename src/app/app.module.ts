@@ -8,10 +8,11 @@ import { TxnComponent } from './txn.component';
 import { AppRoutingModule } from './app.routing.module';
 import { SharedService } from './shared.service';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { PayComponent } from './pay.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, AngularFontAwesomeModule],
-  declarations: [ AppComponent, DashboardComponent, TxnComponent ],
+  declarations: [ AppComponent, DashboardComponent, TxnComponent, PayComponent ],
   bootstrap:    [ AppComponent ],
   providers: [SharedService]
 })

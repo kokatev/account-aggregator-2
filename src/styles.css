@@ -21,6 +21,9 @@
    margin-left:5px;
    background-image: linear-gradient(to right,#f1ecec, rgb(231, 231, 231));
 }
+
+
+
 .bank-balance{
   margin-top:25px;
   margin-bottom: 5px;
@@ -46,4 +49,21 @@ border: none;
   width: 30%;
   float: right;
   font-size: 16px;
+}
+.input-amount{
+  width: 80%;
+  border: none;
+  float: left;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+  margin:20px 10%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 30px;
+  padding:15px;
+  position: relative;
+}
+
+.input-amount:focus{
+  border-bottom: 2px solid rgba(75, 72, 72, 0.493);
+outline: none;
 }

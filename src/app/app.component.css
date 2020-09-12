@@ -23,10 +23,13 @@ body, * {
   display: block;
   color: #535252;
   text-align: center;
-  padding: 14px 28px;
+  padding: 14px 25px;
   text-decoration: none;
   font-size: 17px;
-  border-right: 1px solid rgba(128, 128, 128, 0.267)
+  border-right: 1px solid rgba(128, 128, 128, 0.267);
+  width: 25%;
+  height:72px;
+  box-sizing: border-box;
 }
 
 .navbar a:hover {
