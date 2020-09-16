@@ -1,0 +1,34 @@
+<div>
+  <div>
+    <h3>Savings Trend</h3>
+  </div>
+  <div class="gradient-1">
+    <div style="display: block">
+      <canvas baseChart
+        [datasets]="monthlySavingsChartData"
+        [labels]="monthlySavingsChartLabels"
+        [options]="monthlySavingsChartOptions"
+        [chartType]="monthlySavingsChartType"
+        (chartClick)="onClickMonthlySavingsChart($event)"
+        style="height: 250px">
+      </canvas>
+    </div>
+  </div>
+</div>
+<div style="margin-top: 5%">
+  <div>
+    <h3>Available Savings - {{monthLongNames[monthToBeDisplayed]}}</h3>
+  </div>
+  <div class="gradient-2">
+    <div style="display: block">
+      <canvas baseChart
+        id="savingsInMonthChart"
+        [datasets]="savingsInMonthChartData"
+        [labels]="savingsInMonthChartLabels"
+        [options]="savingsInMonthChartOptions"
+        [chartType]="savingsInMonthChartType"
+        style="height: 250px; padding-top: 15px">
+      </canvas>
+    </div>
+  </div>
+</div>
