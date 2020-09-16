@@ -9,6 +9,76 @@ export const transactions = [
 }
 ];
 
+export const monthlySavingsDetails = {
+  'Jan': {
+    'ICICI': {
+      amount: 20000
+    },
+    'HDFC': {
+      amount: 15000
+    },
+    'PAYTM': {
+      amount: 28000
+    }
+  },
+  'Feb': {
+    'ICICI': {
+      amount: 25000
+    },
+    'HDFC': {
+      amount: 50000
+    },
+    'PAYTM': {
+      amount: 2000
+    }
+  },
+  'Mar': {
+    'ICICI': {
+      amount: 20000
+    },
+    'HDFC': {
+      amount: 35000
+    },
+    'PAYTM': {
+      amount: 4000
+    }
+  },
+  'Apr': {
+    'ICICI': {
+      amount: 26000
+    },
+    'HDFC': {
+      amount: 11000
+    },
+    'PAYTM': {
+      amount: 2000
+    }
+  },
+  'May': {
+    'ICICI': {
+      amount: 31500
+    },
+    'HDFC': {
+      amount: 48500
+    },
+    'PAYTM': {
+      amount: 10000
+    }
+  },
+  'Jun': {
+    'ICICI': {
+      amount: 2500
+    },
+    'HDFC': {
+      amount: 15000
+    },
+    'PAYTM': {
+      amount: 2500
+    }
+  }
+};
+
+
 export const bankLogos = {
 icici:{
   logo: 'https://www.logotaglines.com/wp-content/uploads/2016/08/ICICI-Logo-1200x1227.png'

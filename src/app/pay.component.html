@@ -1,1 +1,80 @@
-<input type="" class="input-amount" type="text">
+
+<div [ngClass]="{'overlay':showLoader}">
+<div class="input-icons" style="margin:30px auto;"> 
+            <fa class="icon" name="rupee-sign"></fa>
+            <input class="input-field" type="text" placeholder="Enter Amount"> 
+</div>
+
+<div class="row">
+  <div class="col-md-12" style="margin:10px 0px;">
+    To
+  </div>
+  <div class="input-icons">
+    <fa class="icon" name="address-book"></fa>
+    <input type="" class="input-field" placeholder="UPI/Mobile no.">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12" style="margin:20px 0px 10px 0px;">
+    From
+  </div>
+<div style="padding:10px 20px; box-sizing:border-box; width:100%; margin-left:0px; border-radius:5px; background-image: linear-gradient(to right,#008fff26, rgb(25 255 181 / 34%));" class="gradient-3">
+  <div class="bank-balance">
+    <span>
+      <img [src]="sharedService.bankLogos['icici'].logo" style="height:25px;">
+    </span>
+    <span style="width:50%; display:inline-block;">ICICI Savings
+        <br>
+         <div style="font-size: 12px; color:grey;">Balance: {{sharedService.bank1Balance | number:'.2'}}</div>
+
+    </span>
+    <span style="width:34%; margin-left:0px;"> 
+      <fa name="rupee-sign"></fa> <input type="" class="input-2" [(ngModel)]="fromBank1"> 
+    </span>
+  </div>
+  <div class="bank-balance">
+    <span>
+      <img [src]="sharedService.bankLogos['hdfc'].logo" style="height:25px;">
+    </span>
+    <span style="width:50%; display:inline-block;">HDFC Savings
+        <br>
+        <div style="font-size: 12px; color:grey;">Balance: {{sharedService.bank2Balance | number:'.2'}}</div>
+
+    </span>
+  <span style="width:34%; margin-left:0px;"> 
+      <fa name="rupee-sign"></fa> <input type="" class="input-2" [(ngModel)]="fromBank2"> 
+    </span>
+  </div>
+  <div class="bank-balance">
+    <span>
+      <img [src]="sharedService.bankLogos['paytm'].logo" style="height:25px;">
+    </span>
+    <span style="width:50%; display:inline-block;">Paytm Bank Savings
+        <br>
+         <div style="font-size: 12px; color:grey;">Balance: {{sharedService.bank3Balance | number:'.2'}}</div>
+    </span>
+   <span style="width:34%; margin-left:0px;"> 
+      <fa name="rupee-sign"></fa> <input type="" class="input-2" [(ngModel)]="fromBank3"> 
+    </span>
+  </div>
+</div>
+</div>
+<div style="text-align:center; margin-top:50px;">
+  <a (click)="deductBalance()" class="transfer-button">
+  <fa name="paper-plane" style="margin-right:5px;"></fa> Confirm Payment
+</a>
+</div>
+</div>
+<div *ngIf="showLoader && !showModal" class="loader-class">
+  Processing <br>
+<div class="lds-ripple"><div></div><div></div></div>
+</div>
+<div *ngIf="showModal" class="modal-class">
+<fa name="check-circle"></fa> &nbsp; Transaction Successful.
+<div style="text-align:center; margin-top:30px;">
+  <a routerLink="/" class="dashboard-button">
+  <fa name="home" style="margin-right:5px;"></fa> Go to Dashboard
+</a>
+</div>
+</div>

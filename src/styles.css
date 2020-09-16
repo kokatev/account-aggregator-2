@@ -50,20 +50,128 @@ border: none;
   float: right;
   font-size: 16px;
 }
-.input-amount{
-  width: 80%;
-  border: none;
-  float: left;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.493);
-  margin:20px 10%;
-  height: 30px;
-  border-radius: 5px;
-  font-size: 30px;
-  padding:15px;
-  position: relative;
+
+.input-icons fa { 
+            position: absolute; 
+            font-size: 35px;
+            color: grey;
+        } 
+
+        .input-icons img { 
+            position: absolute; 
+            font-size: 35px;
+            color: grey;
+        } 
+          
+        .input-icons { 
+            width: 100%; 
+            margin-bottom: 10px; 
+        } 
+          
+        .icon { 
+            padding: 10px; 
+            min-width: 40px; 
+        } 
+          
+.input-field { 
+    width: 100%;
+    padding: 28px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid #eadddd;
+    border-radius: 5px;
+    font-size: 35px;
+    font-weight: lighter;
+    box-sizing: border-box;
+}
+      
+
+.input-2{
+  width: 95px;
+    margin-left: 6px;
+    border: 1px solid #bfb9b9;
+    border-radius: 3px;
+    height: 25px;
 }
 
-.input-amount:focus{
-  border-bottom: 2px solid rgba(75, 72, 72, 0.493);
-outline: none;
+.transfer-button{
+  border-radius: 5px;
+  padding: 15px 22px;
+  font-size: 22px;
+  color: white;
+  background-image: linear-gradient(to right,#467ae9, rgb(52, 182, 199));
+}
+
+.dashboard-button{
+  border-radius: 5px;
+  padding: 15px 22px;
+  font-size: 16px;
+  color: black;
+  background-image: linear-gradient(to right,#ffffff, rgb(212, 212, 212));
+  text-decoration: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(160, 160, 160, 0.39);
+  font-size: 28px;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(160, 160, 160, 0.39);
+}
+
+.overlay{
+  opacity:0.1 !important;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 6px solid rgb(206, 54, 54);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.loader-class{
+    position: fixed;
+    top: 310px;
+    width: 96%;
+    text-align: center;
+}
+.modal-class{
+    position: fixed;
+    top: 260px;
+    width: 96%;
+    padding: 60px 0px 40px;
+    text-align: center;
+   background-image: linear-gradient(to right,#3bc042, rgb(20, 139, 100));
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
 }

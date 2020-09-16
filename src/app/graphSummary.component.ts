@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { SharedService } from "./shared.service";
 import * as pluginDataLabels from 'chartjs-plugin-datalabels';
-import { monthlySavingsDetails } from "./mock.data";
+import { monthlySavingsDetails } from './mock.data';
+import { Color, Label } from 'ng2-charts';
 
 @Component({
   selector: 'graph-summary',

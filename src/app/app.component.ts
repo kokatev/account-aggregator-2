@@ -11,7 +11,6 @@ export class AppComponent  {
   constructor(
     public shrdSvc: SharedService
   ){
-
   }
   name = 'Angular ' + VERSION.major;
 }
