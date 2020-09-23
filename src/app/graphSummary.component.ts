@@ -78,6 +78,7 @@ export class GraphSummaryComponent implements OnInit {
   public savingsInMonthChartData = [
     {
       data: [],
+      borderWidth: 0
     }
   ];
   public monthToBeDisplayed = 'Jun';
@@ -90,7 +91,7 @@ export class GraphSummaryComponent implements OnInit {
             fontColor: 'white',
             padding: 20
         },
-        position: 'bottom',
+        position: 'bottom'
     }
   };
 

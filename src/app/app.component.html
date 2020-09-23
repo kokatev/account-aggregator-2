@@ -1,16 +1,12 @@
 <div class="header">
   {{shrdSvc.screenName}}
-  <fa name="sync" style="float:right; font-size:16px; margin-top:2px;"></fa>
+  <fa name="sync" style="float:right; font-size:16px; margin-top:2px;" routerLink="/consent"></fa>
 </div>
 <router-outlet></router-outlet>
 <div class="navbar">
   <a routerLink="/" routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact: true}"> 
   <fa name="home"></fa>
  <div style="font-size:10px; margin-top:2px;">Dashboard</div>
-  </a>
-
-    <a routerLink="/pay" routerLinkActive="active-menu"><fa name="exchange-alt"></fa>
-   <div style="font-size:10px; margin-top:2px;">Fund Transfer</div>
   </a>
 
   <a routerLink="/txn" routerLinkActive="active-menu"><fa name="history"></fa>
@@ -20,4 +16,8 @@
   <a routerLink="/analysis" routerLinkActive="active-menu"><fa name="chart-pie"></fa>
    <div style="font-size:10px; margin-top:2px;">Analysis</div>
   </a>  
+
+   <a routerLink="/pay" routerLinkActive="active-menu"><fa name="exchange-alt"></fa>
+   <div style="font-size:10px; margin-top:2px;">Fund Transfer</div>
+  </a>
 </div>

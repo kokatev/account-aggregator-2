@@ -1,1 +1,20 @@
-<h2>Transactions here!</h2>
+<div>
+  <div *ngFor="let each of transactionsData" class="transaction-main-div">
+    <div class="transaction-sub-div">
+      <div class="transaction-icon">
+        <i [class]="each.icon + ' fa-2x'" [style.color]="each.color"></i>
+      </div>
+      <div class="transaction-details">
+        <div class="transaction-details-type">
+          <label>{{each.type}}</label>
+        </div>
+        <div class="transaction-details-time">
+          <label>{{each.timestamp}}</label>
+        </div>
+      </div>
+      <div class="transaction-amount">
+        <label>{{each.amount}}</label>
+      </div>
+    </div>
+  </div>
+</div>

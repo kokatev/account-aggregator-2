@@ -66,14 +66,20 @@ export const monthlySavingsDetails = {
     }
   },
   'Jun': {
-    'ICICI': {
-      amount: 2500
+    'Grocery': {
+      amount: 11000
     },
-    'HDFC': {
+    'Billing': {
       amount: 15000
     },
-    'PAYTM': {
-      amount: 2500
+    'Shopping': {
+      amount: 25000
+    },
+    'Food': {
+      amount: 3900
+    },
+    'Other': {
+      amount: 6000
     }
   }
 };

@@ -11,10 +11,11 @@ import { SharedService } from './shared.service';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PayComponent } from './pay.component';
 import { GraphSummaryComponent } from './graphSummary.component';
+import { ConsentComponent } from './consent.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, AngularFontAwesomeModule, ChartsModule],
-  declarations: [ AppComponent, DashboardComponent, TxnComponent, PayComponent, GraphSummaryComponent ],
+  declarations: [ AppComponent, DashboardComponent, TxnComponent, PayComponent, GraphSummaryComponent, ConsentComponent ],
   bootstrap:    [ AppComponent ],
   providers: [SharedService]
 })
