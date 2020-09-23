@@ -20,14 +20,13 @@ export class GraphSummaryComponent implements OnInit {
     'Jun': 'June'
   };
 
-  public monthlySavingsChartType = 'bar';
+  public monthlySavingsChartType = 'line';
   public monthlySavingsChartLabels: Array<any> = [];
   public monthlySavingsChartData: Array<any> = [
     {
       data: [],
-      label: 'Monthly Savings',
-      borderWidth: 2,
-      barThickness: 30
+      label: 'Spending Pattern',
+      borderWidth: 0
     }
   ];
   public monthlySavingsChartOptions = {
@@ -39,7 +38,10 @@ export class GraphSummaryComponent implements OnInit {
           ticks: {
             max : 100000,
             min : 0,
-            fontColor: 'black'
+            fontColor: 'white',
+            stepSize: 20000,
+            fontFamily: 'Varela Round',
+            fontStyle: 'bold'
           },
           gridLines: {
               color: "rgba(169,169,169,0.2)",
@@ -49,7 +51,9 @@ export class GraphSummaryComponent implements OnInit {
       xAxes: [
         {
           ticks: {
-            fontColor: 'black'
+            fontColor: 'white',
+            fontFamily: 'Varela Round',
+            fontStyle: 'bold'
           },
           gridLines: {
               color: "rgba(0, 0, 0, 0)",
@@ -60,7 +64,10 @@ export class GraphSummaryComponent implements OnInit {
     legend: {
         display: true,
         labels: {
-            fontColor: 'black'
+            fontColor: 'white',
+            fontFamily: 'Varela Round',
+            fontStyle: 'bold',
+            fontSize: 20
         },
         position: 'top',
     }
