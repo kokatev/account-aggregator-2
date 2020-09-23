@@ -1,22 +1,26 @@
 .transaction-main-div{
   margin-top: 30px; 
-  border-bottom: dotted rgba(0,0,0,0.05)
+  border-bottom: 1px solid rgba(128, 128, 128, 0.418);
 }
 .transaction-sub-div{
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .transaction-icon{
   padding-left: 5px;
 }
 .transaction-details{
-  margin-left: 70px;
+  font-size: 18px;;
+  margin-left: 50px;
   margin-top: -35px;
 }
 .transaction-details-time{
-  font-size: x-small;
+  font-size: 14px;
+  color: grey;
 }
 .transaction-amount{
-  margin-left: 300px;
-  margin-top: -30px;
-  font-size: small;
+    margin-left: 275px;
+    margin-top: -34px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #9e11119c;
 }

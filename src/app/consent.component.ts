@@ -7,13 +7,17 @@ import { SharedService } from './shared.service';
 })
 
 export class ConsentComponent implements OnInit{
-
+public showModal = false;
   constructor(
     private sharedService: SharedService
   ){}
 
   ngOnInit(){
     this.sharedService.screenName = 'Information Requested by Lender';
+  }
+
+  shareInfo(){
+    this.showModal = true;
   }
 
 }

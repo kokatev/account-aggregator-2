@@ -1,8 +1,30 @@
+<div [ngClass]="{'overlay':showModal}">
+
 <div class="consent">
-<b>Home Loan Lending Services Pvt. Ltd.</b> has financial information for processing your Home Loan request. Please provide consent by selecting the information you want to share with the lender and agreeing to the terms & conditions. 
+<b>Home Loan Lending Services Pvt. Ltd.</b> has requested your financial information for processing your Home Loan request. Please provide consent by agreeing to the terms & conditions and share the information with Lender as requested.
 </div>
+<br>
+<div style="padding:10px; font-size:14px;">
+
+<span style="font-size:22px; margin-right:15px;">Enter your PIN:</span>
+ <input type="password" style="padding:10px 20px; width:50px; box-sizing: border-box">&nbsp;
+<input type="password" style="padding:10px 20px; width:50px; box-sizing: border-box">&nbsp;<input type="password" style="padding:10px 20px; width:50px; box-sizing: border-box">&nbsp;<input type="password" style="padding:10px 20px; width:50px; box-sizing: border-box">&nbsp;
+<br><br>
+<input type="checkbox" style="width:20px; height:20px; vertical-align:middle;"> I agree with the <a href="/rrr" style="text-decoration:none;">Terms & conditions</a>  mentioned by the Account Aggregator pplication.
+</div>
+
 <div style="text-align:center; margin-top:50px;">
-  <a (click)="deductBalance()" class="transfer-button">
+  <a (click)="shareInfo()" class="transfer-button" style="cursor: pointer;">
   Share Details
 </a>
+</div>
+</div>
+
+<div *ngIf="showModal" class="modal-class">
+<fa name="check-circle"></fa> &nbsp; Details Shared Successfully.
+<div style="text-align:center; margin-top:30px;">
+  <a routerLink="/" class="dashboard-button">
+  <fa name="home" style="margin-right:5px;"></fa> Go to Dashboard
+</a>
+</div>
 </div>

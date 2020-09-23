@@ -184,3 +184,28 @@ letter-spacing: 1px;
 line-height: 30px;
 color: grey;
 }
+
+.icon-style{
+  font-size: 24px !important;
+    vertical-align: super;
+    color: grey;
+}
+
+.tags{
+  display: inline-block;
+  margin: 4px;
+  padding:5px 12px;
+  border-radius: 15px;;
+  border: 1px solid rgba(128, 128, 128, 0.603);
+  font-size:12px;
+}
+
+.active{
+  background-color: rgb(94, 137, 230);
+  color:white;
+}
+
+.filters{
+ padding: 8px 0px 8px;
+ border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+}

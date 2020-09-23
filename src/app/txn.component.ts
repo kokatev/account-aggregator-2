@@ -17,49 +17,56 @@ export class TxnComponent implements OnInit {
       type: 'Groceries',
       amount: '₹ 5,800.00',
       icon: 'fa fa-shopping-cart',
-      timestamp: '09-22-2020 12:38PM IST',
+      timestamp: '5 transactions',
       color: 'darkgray'
     },
     {
       type: 'Dining',
       amount: '₹ 3,000.00',
       icon: 'fa fa-utensils',
-      timestamp: '09-20-2020 12:38PM IST',
+      timestamp: '3 transactions',
       color: 'green'
     },
     {
       type: 'Medical',
       amount: '₹ 14,999.00',
       icon: 'fa fa-syringe',
-      timestamp: '09-15-2020 04:00PM IST',
+            timestamp: '4 transactions',
       color: 'red'
     },
     {
       type: 'Shopping',
       amount: '₹ 22,500.00',
       icon: 'fa fa-shopping-bag',
-      timestamp: '09-12-2020 08:47PM IST',
+      timestamp: '4 transactions',
       color: 'orange'
     },
     {
       type: 'Electricity',
       amount: '₹ 7,500.00',
       icon: 'fa fa-bolt',
-      timestamp: '09-10-2020 06:09AM IST',
+      timestamp: '2 transactions',
       color: 'brown'
     },
     {
       type: 'Housing',
-      amount: '₹ 1,25,000.00',
+      amount: '₹ 75,000.00',
       icon: 'fa fa-building',
-      timestamp: '08-31-2020 05:00AM IST',
+      timestamp: '1 transaction',
       color: 'lightseagreen'
     },
     {
       type: 'Travel',
       amount: '₹ 35,000.00',
       icon: 'fa fa-plane',
-      timestamp: '26-09-2019 02:58AM IST',
+      timestamp: '4 transactions',
+      color: 'purple'
+    },
+    {
+      type: 'Other',
+      amount: '₹ 15,000.00',
+      icon: 'fa fa-align-justify',
+      timestamp: '2 transactions',
       color: 'purple'
     }
     

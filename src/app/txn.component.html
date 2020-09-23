@@ -1,8 +1,25 @@
+<div class="filters">
+  <span class="tags active">
+    Categories
+  </span> 
+  <span class="tags">
+    Bank
+  </span>
+  <span class="tags">
+    Merchants
+  </span>  
+    <span class="tags">
+    Debit
+  </span>  
+    <span class="tags">
+    Credit
+  </span>  
+</div>
 <div>
   <div *ngFor="let each of transactionsData" class="transaction-main-div">
     <div class="transaction-sub-div">
       <div class="transaction-icon">
-        <i [class]="each.icon + ' fa-2x'" [style.color]="each.color"></i>
+        <i [class]="each.icon + ' fa-2x icon-style'"></i>
       </div>
       <div class="transaction-details">
         <div class="transaction-details-type">
